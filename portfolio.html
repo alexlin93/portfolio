@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <!-- This contains the header with the name in the right top corner and the logo in the left top corner of the website-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- The logo is an svg for hd resolution at all screen sizes -->
+            <img class="title-logo" src="images/logo.svg" alt="logo">
+          </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Jane Doette</h1>
+            <h4>Front-end Ninja</h4>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <hr>
+            </div>
+        </div>
+      </div>
+    </header>
+  <!-- This section will contain the banner image -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-responsive" src="http://placekitten.com/1140/350" alt="banner image">
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- This article will contain the main clickable portion of the website and specific information about the portfolio work -->
+    <article>
+      <!-- This container contains the title featured work that separates the header from content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-muted">Featured Work</h2>
+          </div>
+        </div>
+        <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture and github link -->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <!-- Each picture element will contain media queries that will determine what photo resolution and size is chosen -->
+            <picture>
+              <source media="(min-width:1000px)" srcset="images/appify-1000x800_1x.png 1x, images/appify-1000x800_2x.png 2x">
+              <source media="(min-width:600px)" srcset="images/appify-800x600_1x.png 1x, images/appify-800x600_2x.png 2x">
+              <img src="images/appify-600x400_2x.png" alt="Apps of the world!"  data-toggle="modal" data-target="#project1">
+            </picture>
+            <h3 class="text-uppercase">Appify</h3>
+            <p><a href="http://github.com">https://github.com/udacity/appify</a></p>
+          </div>
+          <div class="col-md-4">
+            <picture>
+              <source media="(min-width:1000px)" srcset="images/sunflower-1000x800_1x.jpg 1x, images/sunflower-1000x800_2x.jpg 2x">
+              <source media="(min-width:600px)" srcset="images/sunflower-800x600_1x.jpg 1x, images/sunflower-800x600_2x.jpg 2x">
+              <img src="images/sunflower-600x400_2x.jpg" alt="A Beautiful Sunflower!"  data-toggle="modal" data-target="#project1">
+            </picture>
+            <h3 class="text-uppercase">Sunflower</h3>
+            <p><a href="http://github.com">https://github.com/udacity/sunflower</a></p>
+          </div>
+          <div class="col-md-4">
+            <picture>
+              <source media="(min-width:1000px)" srcset="images/bokeh-1000x800_1x.jpg 1x, images/bokeh-1000x800_2x.jpg 2x">
+              <source media="(min-width:600px)" srcset="images/bokeh-800x600_1x.jpg 1x, images/bokeh-800x600_2x.jpg 2x">
+              <img src="images/bokeh-600x400_2x.jpg" alt="Bokeh photo!"  data-toggle="modal" data-target="#project1">
+            </picture>
+            <h3 class="text-uppercase">Bokeh</h3>
+            <p><a href="http://github.com">https://github.com/udacity/bokeh</a></p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- This modal will be a window that will come out once the user's pointer clicks on a portfolio work image above. It will contain more information about each work with another picture. -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/555/300" alt="kitties">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
