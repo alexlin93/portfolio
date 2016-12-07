@@ -1,32 +1,41 @@
+/* Content */
 body {
     margin-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #2d3c49;
     font-weight: 400;
 }
 
-img, embed, object, video {
+/* Images and Elements*/
+img,
+embed,
+object,
+video {
     max-width: 100%;
-    ;
 }
 
+/* Modal */
 button {
     min-width: 48px;
     min-height: 48px;
 }
 
+/* Classes */
 .text-muted {
     color: #7d97ad;
 }
+
 
 .text-thin {
     font-weight: 300;
 }
 
+
 .title-super {
     font-size: 60px;
 }
+
 
 .title-logo {
     margin-top: 20px;
