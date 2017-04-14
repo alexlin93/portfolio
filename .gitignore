@@ -1,0 +1,4 @@
+Gruntfile.js
+image_src/*
+node_modules/*
+package.json

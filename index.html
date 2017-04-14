@@ -5,20 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Lin's Portfolio</title>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#"><img src="images/logo.svg" alt="logo" width="50" height="50"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">about</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#resume">resume</a></li>
+              <li><a href="#social-media">contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
   <!-- This contains the header with the name in the right top corner and the logo in the left top corner of the website-->
     <header id="home">
         <div class="container">
             <div class="row">
               <div class="col-xs-4 text-left">
                 <!-- The logo is an svg for hd resolution at all screen sizes -->
-                <img class="title-logo" src="images/logo.svg" alt="logo" width="150" height="150">
+                <img class="title-logo" src="images/logo.svg" alt="logo" width="100" height="100">
               </div>
 
               <div class="col-xs-8 text-right text-uppercase">
@@ -34,13 +66,13 @@
         <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <img class="img-responsive" src="https://c2.staticflickr.com/8/7405/10311183733_960e67deb6_b.jpg" alt="banner image">
-              </div>
-              <div class="col-md-6">
                 <p>
                   <h2>Hi, my name is Alex.</h2>
                   I'm a web developer based in New Jersey with a passion for building amazing user-friendly web applications. Check out the projects I've created using a wide range of JS frameworks, resposive CSS design, and even a Linux server using Apache and PostGreSQL. Connect with me through my email or LinkedIn.
                 </p>
+              </div>
+              <div class="col-md-6">
+                <img class="img-responsive" src="https://c2.staticflickr.com/8/7405/10311183733_960e67deb6_b.jpg" alt="banner image">
               </div>
           </div>
     </section>
@@ -54,7 +86,7 @@
               </div>
             </div>
             <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture and github link -->
-            <div class="row text-center">
+            <div class="row text-center section-end">
               <div class="col-md-4">
                 <!-- Each picture element will contain media queries that will determine what photo resolution and size is chosen -->
                 <picture>
@@ -100,16 +132,47 @@
             </div>
         </div>
     </article>
+
     <!-- This section will contain my resume -->
-    <section class="bg2" id="resume">
+    <section id="resume">
         <div class="container">
             <div class="row">
-              <div class="col-md-12">
-
-              </div>
+                <div class="col-md-12">
+                    <span>hi</span>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- This section will contain my social media links -->
+    <section class="bg3" id="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="padding-bottom:20px;">Let's get connected!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="http://github.com" target="_blank"><i class="fa fa-linkedin-square fa-inverse fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="http://github.com" target="_blank"><i class="fa fa-github fa-inverse fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="http://github.com" target="_blank"><i class="fa fa-envelope fa-inverse fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </footer>
 
     <!-- This modal will be a window that will come out once the user's pointer clicks on a portfolio work image above. It will contain more information about each work with another picture. -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
