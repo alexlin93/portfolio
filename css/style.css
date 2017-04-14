@@ -3,8 +3,10 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: "Lato", sans-serif;
+    font-size: 20px;
     color: #2d3c49;
-    font-weight: 400;
+    font-weight: 300;
+    background-color: #f4f5f7;
 }
 
 /* Images and Elements*/
