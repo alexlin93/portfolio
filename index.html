@@ -13,95 +13,104 @@
   </head>
   <body>
   <!-- This contains the header with the name in the right top corner and the logo in the left top corner of the website-->
-    <div class="container">
-      <header class="header">
-          <div class="row">
-            <div class="col-xs-4 text-left">
-              <!-- The logo is an svg for hd resolution at all screen sizes -->
-              <img class="title-logo" src="images/logo.svg" alt="logo" width="150" height="150">
-            </div>
+    <header id="home">
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-4 text-left">
+                <!-- The logo is an svg for hd resolution at all screen sizes -->
+                <img class="title-logo" src="images/logo.svg" alt="logo" width="150" height="150">
+              </div>
 
-            <div class="col-xs-8 text-right text-uppercase">
-              <br>
-              <h1 class="title-super text-thin">Alex   Lin</h1>
-              <h4>Web Developer</h4>
+              <div class="col-xs-8 text-right text-uppercase">
+                <br>
+                <h1 class="title-super text-thin">Alex   Lin</h1>
+                <h4>Web Developer</h4>
+              </div>
             </div>
-          </div>
-
-          <div class="row">
-              <div class="col-md-12">
-                <hr>
+        </div>
+    </header>
+  <!-- This section will contain an introduction and banner image -->
+    <section class="bg2" id="about">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-responsive" src="https://c2.staticflickr.com/8/7405/10311183733_960e67deb6_b.jpg" alt="banner image">
+              </div>
+              <div class="col-md-6">
+                <p>
+                  <h2>Hi, my name is Alex.</h2>
+                  I'm a web developer based in New Jersey with a passion for building amazing user-friendly web applications. Check out the projects I've created using a wide range of JS frameworks, resposive CSS design, and even a Linux server using Apache and PostGreSQL. Connect with me through my email or LinkedIn.
+                </p>
               </div>
           </div>
-      </header>
-    <!-- This section will contain the banner image -->
-      <section class="banner">
-          <div class="row">
-            <div class="col-md-6">
-              <img class="img-responsive" src="https://c2.staticflickr.com/8/7405/10311183733_960e67deb6_b.jpg" alt="banner image">
+    </section>
+  <!-- This article will contain the main clickable portion of the website and specific information about the portfolio work -->
+    <article id="projects">
+      <!-- This container contains the title featured work that separates the header from content -->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="section-title">Check out my projects!</h2>
+              </div>
             </div>
-            <div class="col-md-6">
-              <p>
-                <h2>Hi, my name is Alex.</h2>
-                I'm a web developer based in New Jersey with a passion for building amazing user-friendly web applications. Check out the projects I've created using a wide range of JS frameworks, resposive CSS design, and even a Linux server using Apache and PostGreSQL. Connect with me through my email or LinkedIn.
-              </p>
+            <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture and github link -->
+            <div class="row text-center">
+              <div class="col-md-4">
+                <!-- Each picture element will contain media queries that will determine what photo resolution and size is chosen -->
+                <picture>
+                  <source media="(min-width:1000px)" srcset="images/appify-1000x800_1x.png 1x, images/appify-1000x800_2x.png 2x">
+                  <source media="(min-width:600px)" srcset="images/appify-800x600_1x.png 1x, images/appify-800x600_2x.png 2x">
+                  <img src="images/appify-600x400_2x.png" alt="Apps of the world!"  data-toggle="modal" data-target="#project1">
+                </picture>
+
+                <h3 class="text-uppercase">Appify</h3>
+
+                <p>
+                  <a href="http://github.com" target="_blank">https://github.com/udacity/appify</a>
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <picture>
+                  <source media="(min-width:1000px)" srcset="images/sunflower-1000x800_1x.jpg 1x, images/sunflower-1000x800_2x.jpg 2x">
+                  <source media="(min-width:600px)" srcset="images/sunflower-800x600_1x.jpg 1x, images/sunflower-800x600_2x.jpg 2x">
+                  <img src="images/sunflower-600x400_2x.jpg" alt="A Beautiful Sunflower!"  data-toggle="modal" data-target="#project1">
+                </picture>
+
+                <h3 class="text-uppercase">Sunflower</h3>
+
+                <p>
+                  <a href="http://github.com" target="_blank">https://github.com/udacity/sunflower</a>
+                </p>
+              </div>
+
+              <div class="col-md-4">
+                <picture>
+                  <source media="(min-width:1000px)" srcset="images/bokeh-1000x800_1x.jpg 1x, images/bokeh-1000x800_2x.jpg 2x">
+                  <source media="(min-width:600px)" srcset="images/bokeh-800x600_1x.jpg 1x, images/bokeh-800x600_2x.jpg 2x">
+                  <img src="images/bokeh-600x400_2x.jpg" alt="Bokeh photo!"  data-toggle="modal" data-target="#project1">
+                </picture>
+
+                <h3 class="text-uppercase">Bokeh</h3>
+
+                <p>
+                  <a href="http://github.com" target="_blank">https://github.com/udacity/bokeh</a>
+                </p>
+              </div>
             </div>
-      </section>
-    <!-- This article will contain the main clickable portion of the website and specific information about the portfolio work -->
-      <article class="featured-work">
-        <!-- This container contains the title featured work that separates the header from content -->
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-muted">Featured Work</h2>
+        </div>
+    </article>
+    <!-- This section will contain my resume -->
+    <section class="bg2" id="resume">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+
+              </div>
             </div>
-          </div>
-          <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture and github link -->
-          <div class="row text-center">
-            <div class="col-md-4">
-              <!-- Each picture element will contain media queries that will determine what photo resolution and size is chosen -->
-              <picture>
-                <source media="(min-width:1000px)" srcset="images/appify-1000x800_1x.png 1x, images/appify-1000x800_2x.png 2x">
-                <source media="(min-width:600px)" srcset="images/appify-800x600_1x.png 1x, images/appify-800x600_2x.png 2x">
-                <img src="images/appify-600x400_2x.png" alt="Apps of the world!"  data-toggle="modal" data-target="#project1">
-              </picture>
+        </div>
+    </section>
 
-              <h3 class="text-uppercase">Appify</h3>
-
-              <p>
-                <a href="http://github.com" target="_blank">https://github.com/udacity/appify</a>
-              </p>
-            </div>
-
-            <div class="col-md-4">
-              <picture>
-                <source media="(min-width:1000px)" srcset="images/sunflower-1000x800_1x.jpg 1x, images/sunflower-1000x800_2x.jpg 2x">
-                <source media="(min-width:600px)" srcset="images/sunflower-800x600_1x.jpg 1x, images/sunflower-800x600_2x.jpg 2x">
-                <img src="images/sunflower-600x400_2x.jpg" alt="A Beautiful Sunflower!"  data-toggle="modal" data-target="#project1">
-              </picture>
-
-              <h3 class="text-uppercase">Sunflower</h3>
-
-              <p>
-                <a href="http://github.com" target="_blank">https://github.com/udacity/sunflower</a>
-              </p>
-            </div>
-
-            <div class="col-md-4">
-              <picture>
-                <source media="(min-width:1000px)" srcset="images/bokeh-1000x800_1x.jpg 1x, images/bokeh-1000x800_2x.jpg 2x">
-                <source media="(min-width:600px)" srcset="images/bokeh-800x600_1x.jpg 1x, images/bokeh-800x600_2x.jpg 2x">
-                <img src="images/bokeh-600x400_2x.jpg" alt="Bokeh photo!"  data-toggle="modal" data-target="#project1">
-              </picture>
-
-              <h3 class="text-uppercase">Bokeh</h3>
-
-              <p>
-                <a href="http://github.com" target="_blank">https://github.com/udacity/bokeh</a>
-              </p>
-            </div>
-          </div>
-      </article>
-    </div>
     <!-- This modal will be a window that will come out once the user's pointer clicks on a portfolio work image above. It will contain more information about each work with another picture. -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
