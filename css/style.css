@@ -2,7 +2,7 @@
 body {
     margin-top: 20px;
     font-family: "Lato", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #2d3c49;
     font-weight: 300;
     background: linear-gradient(#ffffff, #c6c6c6);
@@ -14,7 +14,8 @@ body {
     color: #efefef;
     position: relative;
     z-index: 1;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .bg2:after {
@@ -69,6 +70,14 @@ video {
     max-width: 100%;
 }
 
+.profile {
+    max-width: 300px;
+    max-height: 450px;
+    margin: auto;
+    border-radius: 5%;
+    border: 2px solid #c6c6c6;
+}
+
 /* Modal */
 button {
     min-width: 48px;
@@ -77,8 +86,14 @@ button {
 
 /* Logo */
 .title-logo {
-    margin-top: 40px;
-    opacity: 0.7;
+    max-height: 200px;
+    max-width: 200px;
+    width: 20%;
+    height: 20%;
+    min-width: 100px;
+    min-height: 100px;
+    margin: auto;
+    display: block;
 }
 
 /* Fonts */
@@ -91,5 +106,16 @@ button {
 }
 
 .title-super {
-    font-size: 60px;
+    font-size: 300%;
+}
+
+.title-sub {
+    font-size: 90%;
+}
+
+/* Home Section */
+#home {
+    margin-top: 200px;
+    margin-bottom: 300px;
+    text-align: center;
 }
