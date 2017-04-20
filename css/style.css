@@ -8,6 +8,15 @@ body {
     background: linear-gradient(#ffffff, #c6c6c6);
 }
 
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
 /* Background design pattern */
 .bg2 {
     background: #2d3c49;
@@ -76,12 +85,27 @@ video {
     margin: auto;
     border-radius: 5%;
     border: 2px solid #c6c6c6;
+    margin-top: 30px;
 }
 
-/* Modal */
-button {
-    min-width: 48px;
-    min-height: 48px;
+.project {
+    max-height: 450px;
+    margin: auto;
+    border-radius: 5%;
+    border: 3px solid #c6c6c6;
+    opacity: 0.6;
+}
+
+.project:hover {
+    border: 3px solid #ffffff;
+    opacity: 1.0;
+}
+
+.resume {
+    margin: auto;
+    border-radius: 5%;
+    border: 3px solid #c6c6c6;
+    margin-bottom: 120px;
 }
 
 /* Logo */
@@ -113,9 +137,47 @@ button {
     font-size: 90%;
 }
 
+.text-footer {
+    font-weight: 300;
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /* Home Section */
 #home {
     margin-top: 200px;
     margin-bottom: 300px;
     text-align: center;
+}
+
+/* Project Section */
+#projects {
+    text-align: center;
+}
+
+.proj-div {
+    text-align: center;
+    margin: auto;
+}
+
+/* Social Media Buttons */
+.media-btn {
+    margin: auto;
+}
+
+.media-btn:hover {
+    color: #c6c6c6;
+    opacity: 0.5;
+}
+
+/* Modal */
+button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.modal-body {
+    display: flex;
+    margin: auto;
 }

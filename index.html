@@ -67,7 +67,7 @@
               <div class="col-md-6">
                 <p>
                   <h2>Hi, my name is Alex.</h2>
-                  I'm a web developer based in New Jersey with a passion for building amazing user-friendly web applications. Check out the projects I've created using a wide range of JS frameworks, resposive CSS design, and even a Linux server using Apache and PostGreSQL. Connect with me through my email or LinkedIn.
+                  I'm a web developer based in New Jersey with a passion for building amazing user-friendly web applications. Check out the projects I've created using a wide range of JS frameworks, responsive CSS design, and even a Linux server using Apache and PostgreSQL. Connect with me through my email or LinkedIn below!
                 </p>
               </div>
               <div class="col-md-6">
@@ -76,90 +76,65 @@
           </div>
     </section>
   <!-- This article will contain the main clickable portion of the website and specific information about the portfolio work -->
-    <article id="projects">
+    <article>
       <!-- This container contains the title featured work that separates the header from content -->
         <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2 class="section-title">Check out my projects!</h2>
+                <h2 class="section-title" id="projects">Check out my projects!</h2>
+
+                <p>Click on each picture for more information.</p>
               </div>
             </div>
-            <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture and github link -->
+            <!-- Each column division will be responsive as they are flexboxes and contain one piece of portfolio work with a picture -->
             <div class="row text-center section-end">
-              <div class="col-md-4">
-                <!-- Each picture element will contain media queries that will determine what photo resolution and size is chosen -->
-                <picture>
-                  <source media="(min-width:1000px)" srcset="images/appify-1000x800_1x.png 1x, images/appify-1000x800_2x.png 2x">
-                  <source media="(min-width:600px)" srcset="images/appify-800x600_1x.png 1x, images/appify-800x600_2x.png 2x">
-                  <img src="images/appify-600x400_2x.png" alt="Apps of the world!"  data-toggle="modal" data-target="#project1">
-                </picture>
-
-                <h3 class="text-uppercase">Appify</h3>
-
-                <p>
-                  <a href="http://github.com" target="_blank">https://github.com/udacity/appify</a>
-                </p>
+              <div class="col-md-6 text-center">
+                <a href="http://www.bloggerspot1337.appspot.com"><h3>Bloggerspot</h3></a>
+                <img class="img-responsive project" src="images/bloggerspot-500x500_80.png" alt="bloggerspot" data-toggle="modal" data-target="#project1">
               </div>
 
-              <div class="col-md-4">
-                <picture>
-                  <source media="(min-width:1000px)" srcset="images/sunflower-1000x800_1x.jpg 1x, images/sunflower-1000x800_2x.jpg 2x">
-                  <source media="(min-width:600px)" srcset="images/sunflower-800x600_1x.jpg 1x, images/sunflower-800x600_2x.jpg 2x">
-                  <img src="images/sunflower-600x400_2x.jpg" alt="A Beautiful Sunflower!"  data-toggle="modal" data-target="#project1">
-                </picture>
-
-                <h3 class="text-uppercase">Sunflower</h3>
-
-                <p>
-                  <a href="http://github.com" target="_blank">https://github.com/udacity/sunflower</a>
-                </p>
+              <div class="col-md-6 text-center">
+                <a href="http://www.escateltaxlaw.appspot.com"><h3>Escatel Tax Law</h3></a>
+                <img class="img-responsive project" src="images/escatel-500x500_80.png" alt="escatel" data-toggle="modal" data-target="#project2">
               </div>
 
-              <div class="col-md-4">
-                <picture>
-                  <source media="(min-width:1000px)" srcset="images/bokeh-1000x800_1x.jpg 1x, images/bokeh-1000x800_2x.jpg 2x">
-                  <source media="(min-width:600px)" srcset="images/bokeh-800x600_1x.jpg 1x, images/bokeh-800x600_2x.jpg 2x">
-                  <img src="images/bokeh-600x400_2x.jpg" alt="Bokeh photo!"  data-toggle="modal" data-target="#project1">
-                </picture>
-
-                <h3 class="text-uppercase">Bokeh</h3>
-
-                <p>
-                  <a href="http://github.com" target="_blank">https://github.com/udacity/bokeh</a>
-                </p>
+              <div class="col-md-6 text-center">
+                <a href="http://alexlin93.github.io/East-Coast-Map/"><h3>Interactive Map</h3></a>
+                <img class="img-responsive project" src="images/map-500x500_80.png" alt="map" data-toggle="modal" data-target="#project3">
               </div>
             </div>
         </div>
     </article>
 
     <!-- This section will contain my resume -->
-    <section id="resume">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>hi</span>
+                    <h2 class="section-title" id="resume">Here's my resume.</h2>
+                    <img class="img-responsive resume" src="images/resume.png" alt="resume">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- This section will contain my social media links -->
-    <section class="bg3" id="social-media">
+    <section class="bg3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 style="padding-bottom:20px;">Let's get connected!</h2>
+                    <h2 id="social-media" style="padding-bottom:20px;">Let's get connected!</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="http://www.linkedin.com/in/alexanderlin93/" target="_blank"><i class="fa fa-linkedin-square fa-inverse fa-3x" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com/in/alexanderlin93/" target="_blank"><i class="fa fa-linkedin-square fa-inverse fa-3x media-btn" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="http://github.com/alexlin93" target="_blank"><i class="fa fa-github fa-inverse fa-3x" aria-hidden="true"></i></a>
+                    <a href="http://github.com/alexlin93" target="_blank"><i class="fa fa-github fa-inverse fa-3x media-btn" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="mailto:alexlinica@gmail.com" target="_blank"><i class="fa fa-envelope fa-inverse fa-3x" aria-hidden="true"></i></a>
+                    <a href="mailto:alexlinica@gmail.com" target="_blank"><i class="fa fa-envelope fa-inverse fa-3x media-btn" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -168,7 +143,11 @@
     <footer>
         <div class="container">
             <div class="row">
-
+                <div class="col-md-12 text-footer">
+                    <p>
+                     my portfolio website - see the code at <a href="https://github.com/alexlin93/portfolio"> github.com/alexlin93/portfolio </a>
+                     </p>
+                </div>
             </div>
         </div>
     </footer>
@@ -178,12 +157,47 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">Bloggerspot, a lightweight user-friendly blog</h4>
                 </div>
 
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placekitten.com/555/300" alt="kitties">
-                    <p>This was my first project in this class. I learned a lot about HTML and CSS.</p>
+                    <p></p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Escatel Tax Law, a responsive website using React.JS</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p></p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Interactive Map, a map application using Google Maps API</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p></p>
                 </div>
 
                 <div class="modal-footer">
